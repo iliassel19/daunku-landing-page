@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    overflow-x: hidden;
+    font-family: "Work Sans", sans-serif;
+  }
+}
+
+@layer utilities {
+  .clip-shape {
+    clip-path: polygon(52% 0, 0% 100%, 100% 100%);
+  }
+}
