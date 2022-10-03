@@ -8,25 +8,34 @@ import Product3 from "../../images/product-3.png";
 import Container from "../UI/Container/Container";
 const BestSeller = () => {
   return (
-    <Container className="flex items-center mb-24">
-      <div className="flex-[0_0_30%]">
-        <SecondaryHeading className="mb-6 capitalize">
-          Best seller products
-        </SecondaryHeading>
-        <a
-          href="#"
-          className="flex items-center gap-4 transition-all duration-200 hover:gap-6"
-        >
-          See all collection{" "}
-          <img src={ArrowIcon} alt="Arrow right icon" className="w-5 h-5" />
-        </a>
-      </div>
-      <div className="flex flex-1 items-center justify-between">
-        <BestSellerCard image={Product1} />
-        <BestSellerCard image={Product2} />
-        <BestSellerCard image={Product3} />
-      </div>
-    </Container>
+    <section>
+      <Container className="flex items-center mb-24 2xl:flex-col 2xl:items-stretch">
+        <div className="flex-[0_0_30%] 2xl:flex-none ">
+          <SecondaryHeading className="mb-6 capitalize 2xl:text-center 2xl:mb-12">
+            Best seller products
+          </SecondaryHeading>
+          <a
+            href="#"
+            className="flex items-center gap-4 transition-all duration-200 hover:gap-6 2xl:hidden"
+          >
+            See all collection{" "}
+            <img src={ArrowIcon} alt="Arrow right icon" className="w-5 h-5" />
+          </a>
+        </div>
+        <div className="flex flex-1 items-center justify-between xl:flex-wrap slg:justify-center gap-16">
+          <BestSellerCard image={Product1} />
+          <BestSellerCard image={Product2} />
+          <BestSellerCard image={Product3} />
+          <a
+            href="#"
+            className="items-center gap-4 transition-all duration-200 hover:gap-6 hidden 2xl:flex"
+          >
+            See all collection{" "}
+            <img src={ArrowIcon} alt="Arrow right icon" className="w-5 h-5" />
+          </a>
+        </div>
+      </Container>
+    </section>
   );
 };
 

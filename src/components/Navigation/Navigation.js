@@ -8,7 +8,7 @@ const Navigation = () => {
     setIsOpen((prevState) => setIsOpen(!prevState));
   };
   return (
-    <nav className="pt-8 flex items-center justify-around">
+    <nav className="pt-8 flex items-center justify-around  ">
       <button
         className={`hidden relative w-8 h-4 md:block`}
         onClick={menuOpenHandler}
@@ -29,7 +29,7 @@ const Navigation = () => {
           }`}
         ></span>
       </button>
-      <a href="#">
+      <a href="#" className=" z-20">
         <img src={Logo} alt="Daunku company logo." />
       </a>
       <NavigationList menuState={isOpen} />
@@ -60,7 +60,7 @@ const Navigation = () => {
           </defs>
         </svg>
 
-        <span className="flex items-center justify-center absolute top-1 -right-1 w-4 h-4 rounded-full text-[12px] bg-gradient-to-r from-lightGreen to-lightBlue text-darkBlue font-bold transition-all duration-200 group-hover:-left-1">
+        <span className="flex items-center justify-center absolute top-1 -right-1 w-4 h-4 rounded-full text-[12px] bg-gradient-to-r from-lightGreen to-lightBlue text-darkBlue font-bold transition-all durat!ion-1000 group-hover:right-2/3">
           1
         </span>
       </button>

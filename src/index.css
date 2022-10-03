@@ -4,8 +4,10 @@
 
 @layer base {
   html {
-    overflow-x: hidden;
     font-family: "Work Sans", sans-serif;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
 

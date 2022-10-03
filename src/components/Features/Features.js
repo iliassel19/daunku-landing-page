@@ -7,7 +7,7 @@ import FeatureBox from "./FeatureBox";
 const Features = () => {
   return (
     <Container className="">
-      <section className="my-24 flex items-center justify-between">
+      <section className="my-24 flex items-center justify-between 2xl:mt-0 xl:my-12 xl:flex-wrap slg:gap-12 slg:pl-6">
         <FeatureBox
           image={FreeShippingIcon}
           heading="free shipping"

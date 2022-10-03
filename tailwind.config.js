@@ -14,8 +14,8 @@ module.exports = {
     },
     screens: {
       "3xl": { max: "1440px" },
-      "2xl": { max: "1250px" },
-      xl: { max: "1000px" },
+      "2xl": { max: "1150px" },
+      xl: { max: "1075px" },
       lg: { max: "900px" },
       slg: { max: "750px" },
       md: { max: "600px" },

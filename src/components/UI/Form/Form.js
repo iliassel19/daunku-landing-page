@@ -6,7 +6,9 @@ const Form = (props) => {
   return (
     <Box
       className={`transition-[width] duration-300 ${
-        props.buttonSearch ? "w-[40%] hover:w-[42%]" : "w-full"
+        props.buttonSearch
+          ? "w-[40%] xl:w-3/4 md:w-[90%] hover:w-[42%] xl:hover:w-[80%] md:hover:w-[95%]"
+          : "w-full"
       } py-2 px-2 rounded-border-base backdrop-blur-[10px] text-sm text-white font-normal `}
     >
       <form action="#" className="flex gap-3 ">
