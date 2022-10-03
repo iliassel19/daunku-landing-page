@@ -33,14 +33,14 @@ const Navigation = () => {
         <img src={Logo} alt="Daunku company logo." />
       </a>
       <NavigationList menuState={isOpen} />
-      <button className="relative">
+      <button className="relative transition duration-200 group hover:scale-[1.1]">
         <svg
           width="32"
           height="38"
           viewBox="0 0 32 38"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="w-8 h-8 transition hover:scale-125"
+          className="w-8 h-8 transition duration-200 "
         >
           <g clip-path="url(#clip0_5_19)">
             <path
@@ -60,7 +60,7 @@ const Navigation = () => {
           </defs>
         </svg>
 
-        <span className="flex items-center justify-center absolute top-1 -right-1 w-4 h-4 rounded-full text-[12px] bg-gradient-to-r from-lightGreen to-lightBlue text-darkBlue font-bold">
+        <span className="flex items-center justify-center absolute top-1 -right-1 w-4 h-4 rounded-full text-[12px] bg-gradient-to-r from-lightGreen to-lightBlue text-darkBlue font-bold transition-all duration-200 group-hover:-left-1">
           1
         </span>
       </button>
